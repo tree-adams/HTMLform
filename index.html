@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>We Want To Hear From You</legend>
+        <div>
+          <label for="name">Full Name:</label>
+          <input 
+          id="name" 
+          type="text" 
+          name="name"
+          placeholder="Enter full name"
+           />
+        </div>
+        <div>
+         <label for="Email">Email Address:</label>
+             <input
+                  id="Email"
+                  type="text"
+                  name="Email"
+                  value=""
+                  required
+                />
+              </div>
+        <div>
+          <label for="form-message">Speak Your Mind:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="333"
+            placeholder="Character Limit: 333"
+          ></textarea>
+        </div>
+        
+       
+    </fieldset>
+        <button type="submit">Send</button>
+        <button type="reset">Try Again</button>
+      </form>
+    </main>
+  </body>
+</html>
